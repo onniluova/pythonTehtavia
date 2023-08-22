@@ -17,4 +17,3 @@ while summa > 1000:
 print("Massa nykymittojen mukaan " + str(kilo) + " kilogrammaa ja " + str(summa) + " grammaa.")
 
 
-

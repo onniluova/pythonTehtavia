@@ -1,5 +1,4 @@
 import random
-
 lukko1 = []
 lukko2 = []
 
