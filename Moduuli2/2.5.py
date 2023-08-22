@@ -14,7 +14,7 @@ while summa > 1000:
     kilo+=1
     summa-=1000
 
-print(str(kilo) + " kilogrammaa ja " + str(summa) + " grammaa.")
+print("Massa nykymittojen mukaan " + str(kilo) + " kilogrammaa ja " + str(summa) + " grammaa.")
 
 
 
