@@ -1,7 +1,7 @@
 laskuri = int(0)
 
-tunnus = ("tunnus")
-salasana = ("salasana")
+tunnus = ("Python")
+salasana = ("Rules")
 
 syote1 = ""
 syote2 = ""
