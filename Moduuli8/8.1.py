@@ -20,5 +20,5 @@ yhteys = mysql.connector.connect(
          password="grheGierhu43432-d",
          autocommit=True
          )
-icao = input("Lentokenttä")
+icao = input("Lentokentän ICAO koodi: ")
 haeICAOKoodi(icao)
