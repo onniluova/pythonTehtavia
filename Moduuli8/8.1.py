@@ -2,7 +2,7 @@ import mysql.connector
 
 def haeICAOKoodi(icao):
     sql = "SELECT name FROM airport"
-    sql += " WHERE iso_country = '" + icao + "'"
+    sql += " WHERE ident = '" + icao + "'"
     print(sql)
     kursori = yhteys.cursor()
     kursori.execute(sql)
