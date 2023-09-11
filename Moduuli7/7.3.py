@@ -4,7 +4,7 @@ lentoasemat = {}
 valintaindex = 0
 
 print("Haluatko syöttää uuden lentoaseman (1), hakea lentoaseman tiedot (2) vai lopettaa? (3)")
-valinta = int(input("Valitse 1, 2 tai 3: "))
+valinta = ""
 index = valinta
 
 while index != 3:
@@ -19,7 +19,7 @@ while index != 3:
     elif valinta == 2:
         valinta3 = str(input("Syötä ICAO koodi: "))
         if valinta3 in lentoasemat.keys():
-            print(lentoasemat[icao])
+            print(lentoasemat[valinta3])
         else:
             print("ICAO koodia löytynyt.")
 
