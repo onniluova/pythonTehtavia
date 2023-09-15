@@ -1,4 +1,5 @@
 import Autot
+import Kilpailut
 import random
 
 #Kilpailuautojen lisääminen listaan
@@ -14,35 +15,39 @@ kilpailuAutot.append(Autot.Auto("ABC-8", random.randint(100, 200)))
 kilpailuAutot.append(Autot.Auto("ABC-9", random.randint(100, 200)))
 kilpailuAutot.append(Autot.Auto("ABC-10", random.randint(100, 200)))
 
-#Kilpailu looppi
+# Lisätään autot Kilpailu luokkaan
+suuriRomuralli = Kilpailut.kilpailu("Suuri romuralli", 8000, kilpailuAutot)
+suuriRomuralli.lisääAutot(kilpailuAutot)
+suuriRomuralli.kilpailuOhi()
 
-index = int(0)
-autoMatka = 0
-loppu = False
+# Kilpailu looppi
 
-while loppu == False:
-    if index < len(kilpailuAutot):
-        kilpailuAutot[index].kiihdytäAutoa(random.randint(-10, 15))
-        kilpailuAutot[index].kuljeMatka(1)
-        #print(str(kilpailuAutot[index].matka) + " " + kilpailuAutot[index].rekisteritunnus)
+#index = int(0)
+#autoMatka = 0
+#loppu = False
 
-    if kilpailuAutot[index].matka >= 10000:
-        loppu = True
+#while loppu == False:
+#    if index < len(kilpailuAutot):
+#        kilpailuAutot[index].kiihdytäAutoa(random.randint(-10, 15))
+#        kilpailuAutot[index].kuljeMatka(1)
+        # print(str(kilpailuAutot[index].matka) + " " + kilpailuAutot[index].rekisteritunnus)
 
-    elif index >= len(kilpailuAutot) - 1:
-        index = 0
+#    if kilpailuAutot[index].matka >= 10000:
+#        loppu = True
 
-    else:
-        index += 1
+#    elif index >= len(kilpailuAutot) - 1:
+#        index = 0
 
-print("Voittaja on: " + kilpailuAutot[index].rekisteritunnus)
+#   else:
+#        index += 1
 
-print("Auton nimi: " + " Huippunopeus: ")
-print("--------------------------")
+#print("Voittaja on: " + kilpailuAutot[index].rekisteritunnus)
 
-for auto in kilpailuAutot:
-    print(auto.rekisteritunnus + "    |   " + str(auto.huippunopeus))
+#print("Auton nimi: " + " Huippunopeus: ")
+#print("--------------------------")
 
+#for auto in kilpailuAutot:
+#    print(auto.rekisteritunnus + "    |   " + str(auto.huippunopeus))
 
 #    for auto in kilpailuAutot:
 #        if auto.matka >= 10000:
