@@ -4,7 +4,7 @@ class Hissi:
         self.ykerros = ykerros
         self.nkerros = akerros
 
-    def siirryKerrokseen(self, kerrokset):
+    def siirryKerrokseen(self, kerrokset): #Tämä funktio tarkistaa ollaanko menossa alaspäin vai ylöspäin. Sen jälkeen se ajaa haluttua funktiota niin monta kertaa kun tarvitsee.
         if kerrokset < 0:
             while self.nkerros != kerrokset:
                 self.kerrosAlas()
