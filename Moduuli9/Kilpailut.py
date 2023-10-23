@@ -29,6 +29,7 @@ class kilpailu:
                 self.osallistujat[index].kuljeMatka(1)
                 # print(str(kilpailuAutot[index].matka) + " " + kilpailuAutot[index].rekisteritunnus)
             if self.osallistujat[index].matka >= 8000:
+                print("Voittajan kulkema matka: " + str(self.osallistujat[index].matka))
                 loppu = True
 
             elif index >= len(self.osallistujat) - 1:

@@ -20,3 +20,13 @@ class Auto:
     def kuljeMatka(self, tuntimaara):
             self.matka += tuntimaara * self.tnopeus
             #print(self.matka)
+
+class sähköauto(Auto):
+    def __init__(self, rekisteritunnus, huippunopeus, tnopeus, akkukapasiteetti):
+        super().__init__(rekisteritunnus, huippunopeus, tnopeus)
+        self.akkukapasiteetti = akkukapasiteetti
+
+class polttomoottori(Auto):
+    def __init__(self, rekisteritunnus, huippunopeus, tnopeus, polttoaine):
+        super().__init__(rekisteritunnus, huippunopeus, tnopeus)
+        self.polttoaine = polttoaine
