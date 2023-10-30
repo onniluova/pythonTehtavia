@@ -15,6 +15,7 @@ kilpailuAutot.append(Autot.Auto("ABC-8", random.randint(100, 200)))
 kilpailuAutot.append(Autot.Auto("ABC-9", random.randint(100, 200)))
 kilpailuAutot.append(Autot.Auto("ABC-10", random.randint(100, 200)))
 
+#Moduuli 11 tehtävä 2
 # Luo polttomoottori-olion
 polttomoottori = Autot.polttomoottori("ABC-Poltto", 200,  1, 50)
 
@@ -30,6 +31,7 @@ polttomoottori.kuljeMatka(3)
 
 print("Sähköauton matka: " + str(sähköauto.matka) + " kilometriä. " + "Polttomoottorin matka: " + str(polttomoottori.matka) + " kilometriä.")
 
+#Moduuli 10 tehtävä 4
 # Lisätään autot Kilpailu luokkaan
 suuriRomuralli = Kilpailut.kilpailu("Suuri romuralli", 8000, kilpailuAutot)
 suuriRomuralli.lisääAutot(kilpailuAutot)

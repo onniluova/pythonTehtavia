@@ -27,8 +27,8 @@ while loppu == 0:
     else:
         print("Virhe: Kaupunkia ei löytynyt")
 
-    uusi = input("Haluatko syöttää uuden? Y/N ")
-    if uusi == "Y":
+    uusi = input("Haluatko syöttää uuden? y/n ")
+    if uusi == "y":
         loppu = 0
     else:
         loppu = 1

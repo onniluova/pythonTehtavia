@@ -21,6 +21,7 @@ class Auto:
             self.matka += tuntimaara * self.tnopeus
             #print(self.matka)
 
+#Moduuli 11 tehtävä 2
 class sähköauto(Auto):
     def __init__(self, rekisteritunnus, huippunopeus, tnopeus, akkukapasiteetti):
         super().__init__(rekisteritunnus, huippunopeus, tnopeus)

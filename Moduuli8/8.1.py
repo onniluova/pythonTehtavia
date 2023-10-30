@@ -17,7 +17,7 @@ yhteys = mysql.connector.connect(
          port= 3306,
          database='lentokonepeli',
          user='root',
-         password="grheGierhu43432-d",
+         password="1234",
          autocommit=True
          )
 icao = input("Lentokentän ICAO koodi: ")
